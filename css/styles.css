@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(../img/londres.jpg);
+    -webkit-background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover; /* con esto la imagen abarca el 100% de la pantalla*/
+    background-attachment: fixed; /*Para que quede estatico*/
+    font-family: Roboto;
+}
+
+.contenedor-form {
+    position:relative; /* a mi conteneddorPadre, Para que el "Crear cuenta" se mueva hacia la esquina superior derecha*/
+    background : rgba(0,0,0,.7);
+    width: 100%;
+    max-width: 500px;
+    margin: 48px auto; /*auto para centrarlo*/
+    color: aliceblue;
+    border-radius: 5px;
+    padding: 40px;
+}
+
+.contenedor-form .toggle{
+    position: absolute; /*se moverá mi crear cuenta a la esquina superior derecha*/
+    top:7px;
+    right:7px;
+    width: 100px;
+    height: 30px;
+    font-size: 12px;
+    line-height: 25px;
+    text-align: center;
+    border-top: 2px solid #ff851b;
+    border-bottom: 2px solid #ff851b;
+    transition: all .5s ease; /* para que no sea tan tosco el cambio de color*/
+    cursor: pointer /*Para al pasar por encima cambie el cursor*/
+}
+
+.contenedor-form .toggle span {
+    letter-spacing: 1px;
+
+}
+.contenedor-form .toggle:hover{
+    border-top: 2px solid #0075d9;
+    border-bottom: 2px solid #0075d9;
+}
+.contenedor-form h2 {
+    margin: 0 0 28px 0;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1;
+}
+.contenedor-form input[type='text'],
+.contenedor-form input[type='password'],
+.contenedor-form input[type='email']{
+    outline: none;
+    background: rgba(0,0,0,.5);
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    color: #ffff;
+    border: none;
+    border-radius: 2px;
+    border-bottom: 4px solid #ff851b;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0 0 20px 0;
+
+}
+
+.contenedor-form input[type='text']:hover,
+.contenedor-form input[type='password']:hover,
+.contenedor-form input[type='email']:hover{
+    border-bottom: 4px solid #0075d9;
+
+}
